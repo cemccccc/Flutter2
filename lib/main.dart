@@ -23,7 +23,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('Cem'),
+      child: Text('Cem',style: TextStyle(fontSize: 16),),
     );
   }
 }
