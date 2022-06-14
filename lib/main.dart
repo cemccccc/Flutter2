@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 
+import '101/text_learn_view.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(),
       title: 'Material App',
-      home: AnaSayfa(),
+      home: TextLearnView(),
     );
   }
 }
@@ -22,8 +26,11 @@ class AnaSayfa extends StatefulWidget {
 class _AnaSayfaState extends State<AnaSayfa> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('Cem',style: TextStyle(fontSize: 16),),
+    return const Center(
+      child: Text(
+        'Cem',
+        style: TextStyle(fontSize: 16),
+      ),
     );
   }
 }
