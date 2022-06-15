@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '101/container_sizedbox_learn.dart';
+import '101/scaffold_learn.dart';
 import '101/text_learn_view.dart';
 
 void main() => runApp(MyApp());
@@ -10,8 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      title: 'Material App',
-      home: TextLearnView(),
+      title: 'Güzel Başlık',
+      home: ScaffoldLearn(),
     );
   }
 }

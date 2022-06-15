@@ -14,6 +14,10 @@ class TextLearnView extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center, //column center olur
           children: [
+            TextButton(
+              onPressed: () {},
+              child: const Text('Text Button'),
+            ),
             Text(
               'Welcome $name ${name.length}',
               maxLines: 2,
