@@ -37,17 +37,14 @@ class ContainerSizedBox extends StatelessWidget {
             padding: const EdgeInsets.all(10), //içerideki padding
             margin: const EdgeInsets.all(10), // dışarıdaki padding
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.red,
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.green,
-                  offset: Offset(0.1, 1),
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.red,
+                boxShadow: [
+                  BoxShadow(color: Colors.green, offset: Offset(0.1, 1))
+                ],
+                gradient: LinearGradient(colors: [Colors.red, Colors.white])
+                //border: Border.all(width: 2, color: Colors.lime),
                 ),
-              ],
-              gradient: LinearGradient(colors: [Colors.red, Colors.white]),
-              //border: Border.all(width: 2, color: Colors.lime),
-            ),
           ),
         ],
       ),
@@ -59,13 +56,8 @@ class ProjectUtility {
   static BoxDecoration boxDec = BoxDecoration(
     borderRadius: BorderRadius.circular(10),
     color: Colors.red,
-    boxShadow: [
-      BoxShadow(
-        color: Colors.green,
-        offset: Offset(0.1, 1),
-      ),
-    ],
-    gradient: LinearGradient(colors: [Colors.red, Colors.white]),
+    boxShadow: const [BoxShadow(color: Colors.green, offset: Offset(0.1, 1))],
+    gradient: const LinearGradient(colors: [Colors.red, Colors.white]),
   );
 }
 
@@ -74,11 +66,6 @@ class ProjectContainerDecoration extends BoxDecoration {
       : super(
             borderRadius: BorderRadius.circular(10),
             color: Colors.red,
-            boxShadow: [
-              BoxShadow(
-                color: Colors.green,
-                offset: Offset(0.1, 1),
-              ),
-            ],
-            gradient: LinearGradient(colors: [Colors.red, Colors.white]));
+            boxShadow: const [BoxShadow(color: Colors.green, offset: Offset(0.1, 1))],
+            gradient: const LinearGradient(colors: [Colors.red, Colors.white]));
 }
