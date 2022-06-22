@@ -13,6 +13,8 @@ import '101/padding_learn.dart';
 import '101/scaffold_learn.dart';
 import '101/stateless_learn.dart';
 import '101/text_learn_view.dart';
+import 'demos/note_demos_view_cem.dart';
+import 'demos/note_demos_view_veli.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
+      theme: ThemeData.light().copyWith(
         cardTheme: CardTheme(
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10))),
@@ -34,7 +36,7 @@ class MyApp extends StatelessWidget {
             elevation: 0),
       ),
       title: 'Güzel Başlık',
-      home: ImageLearn(),
+      home: NoteDemos2(),
     );
   }
 }
