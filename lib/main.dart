@@ -3,11 +3,15 @@ import 'package:flutter/services.dart';
 
 import '101/appbar.dart';
 import '101/button_learn.dart';
+import '101/card_learn.dart';
 import '101/color.learn.dart';
 import '101/container_sizedbox_learn.dart';
 import '101/icon_learn.dart';
+import '101/image.learn.dart';
 import '101/kendi_text_fieldim.dart';
+import '101/padding_learn.dart';
 import '101/scaffold_learn.dart';
+import '101/stateless_learn.dart';
 import '101/text_learn_view.dart';
 
 void main() => runApp(MyApp());
@@ -20,6 +24,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+        cardTheme: CardTheme(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10))),
         appBarTheme: const AppBarTheme(
             centerTitle: true,
             systemOverlayStyle: SystemUiOverlayStyle.light,
@@ -27,7 +34,7 @@ class MyApp extends StatelessWidget {
             elevation: 0),
       ),
       title: 'Güzel Başlık',
-      home: ColorLearn(),
+      home: ImageLearn(),
     );
   }
 }
