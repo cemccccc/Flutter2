@@ -6,9 +6,12 @@ import '101/button_learn.dart';
 import '101/card_learn.dart';
 import '101/color.learn.dart';
 import '101/container_sizedbox_learn.dart';
+import '101/custom_widget_learn.dart';
 import '101/icon_learn.dart';
 import '101/image.learn.dart';
+import '101/indicator_learn.dart';
 import '101/kendi_text_fieldim.dart';
+import '101/list_tile_learn.dart';
 import '101/padding_learn.dart';
 import '101/scaffold_learn.dart';
 import '101/stateless_learn.dart';
@@ -25,7 +28,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light().copyWith(
+      theme: ThemeData.dark().copyWith(
+        progressIndicatorTheme: const ProgressIndicatorThemeData(
+          //indicatorun rengini buradan okuyalım
+          color: Colors.white,
+          circularTrackColor: Colors.grey,
+        ),
         cardTheme: CardTheme(
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10))),
@@ -36,7 +44,7 @@ class MyApp extends StatelessWidget {
             elevation: 0),
       ),
       title: 'Güzel Başlık',
-      home: NoteDemos2(),
+      home: ListTileLearn(),
     );
   }
 }
