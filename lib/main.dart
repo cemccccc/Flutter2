@@ -5,6 +5,7 @@ import '101/appbar.dart';
 import '101/button_learn.dart';
 import '101/card_learn.dart';
 import '101/color.learn.dart';
+import '101/column_row_learn.dart';
 import '101/container_sizedbox_learn.dart';
 import '101/custom_widget_learn.dart';
 import '101/icon_learn.dart';
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
             elevation: 0),
       ),
       title: 'Güzel Başlık',
-      home: ListTileLearn(),
+      home: ColumnRowLearn(),
     );
   }
 }
