@@ -1,24 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '101/appbar.dart';
-import '101/button_learn.dart';
-import '101/card_learn.dart';
-import '101/color.learn.dart';
 import '101/column_row_learn.dart';
-import '101/container_sizedbox_learn.dart';
-import '101/custom_widget_learn.dart';
-import '101/icon_learn.dart';
-import '101/image.learn.dart';
-import '101/indicator_learn.dart';
-import '101/kendi_text_fieldim.dart';
-import '101/list_tile_learn.dart';
-import '101/padding_learn.dart';
-import '101/scaffold_learn.dart';
-import '101/stateless_learn.dart';
-import '101/text_learn_view.dart';
-import 'demos/note_demos_view_cem.dart';
-import 'demos/note_demos_view_veli.dart';
+import '101/page_view_learn.dart';
+import '101/stack_learn.dart';
+import '101/stateful_learn.dart';
+import '101/statefull_lifecycle.dart';
+import 'demos/stack_demo_view.dart';
 
 void main() => runApp(MyApp());
 
@@ -45,7 +33,7 @@ class MyApp extends StatelessWidget {
             elevation: 0),
       ),
       title: 'Güzel Başlık',
-      home: ColumnRowLearn(),
+      home: StatefulLifeCycleLearn(),
     );
   }
 }
