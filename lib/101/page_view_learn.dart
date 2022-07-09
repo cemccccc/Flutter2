@@ -27,10 +27,10 @@ class _PageViewLearnState extends State<PageViewLearn> {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 20.0),
+            padding: const EdgeInsets.only(left: 20.0),
             child: Text(
               _currentPageIndex.toString(),
-              style: TextStyle(fontSize: 26),
+              style: const TextStyle(fontSize: 26),
             ),
           ),
           const Spacer(),

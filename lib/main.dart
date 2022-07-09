@@ -6,6 +6,7 @@ import '101/page_view_learn.dart';
 import '101/stack_learn.dart';
 import '101/stateful_learn.dart';
 import '101/statefull_lifecycle.dart';
+import '101/text_field_learn.dart';
 import 'demos/stack_demo_view.dart';
 
 void main() => runApp(MyApp());
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
             elevation: 0),
       ),
       title: 'Güzel Başlık',
-      home: StatefulLifeCycleLearn(),
+      home: TextFieldLearn(),
     );
   }
 }
