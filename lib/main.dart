@@ -47,6 +47,7 @@ class MyApp extends StatelessWidget {
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         ),
         appBarTheme: const AppBarTheme(
+          
             iconTheme: IconThemeData(color: Colors.black),
             titleTextStyle: TextStyle(color: Colors.black),
             centerTitle: true,
@@ -62,6 +63,7 @@ class MyApp extends StatelessWidget {
 
 class AnaSayfa extends StatefulWidget {
   const AnaSayfa({Key? key}) : super(key: key);
+
 
   @override
   State<AnaSayfa> createState() => _AnaSayfaState();
