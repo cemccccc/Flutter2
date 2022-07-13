@@ -32,7 +32,7 @@ class ColumnRowLearn extends StatelessWidget {
           SizedBox(
             height: ProjectContainerSizes.cardHeight,
             child: Column(
-              children: const [
+              children:  [
                 Expanded(child: Text('data')),
                 Expanded(child: Text('data')),
                 Expanded(child: Text('data')),

@@ -56,8 +56,8 @@ class ProjectUtility {
   static BoxDecoration boxDec = BoxDecoration(
     borderRadius: BorderRadius.circular(10),
     color: Colors.red,
-    boxShadow: const [BoxShadow(color: Colors.green, offset: Offset(0.1, 1))],
-    gradient: const LinearGradient(colors: [Colors.red, Colors.white]),
+    boxShadow: [BoxShadow(color: Colors.green, offset: Offset(0.1, 1))],
+    gradient: LinearGradient(colors: [Colors.red, Colors.white]),
   );
 }
 
@@ -66,6 +66,6 @@ class ProjectContainerDecoration extends BoxDecoration {
       : super(
             borderRadius: BorderRadius.circular(10),
             color: Colors.red,
-            boxShadow: const [BoxShadow(color: Colors.green, offset: Offset(0.1, 1))],
-            gradient: const LinearGradient(colors: [Colors.red, Colors.white]));
+            boxShadow: [BoxShadow(color: Colors.green, offset: Offset(0.1, 1))],
+            gradient: LinearGradient(colors: [Colors.red, Colors.white]));
 }

@@ -25,7 +25,7 @@ class StackDemoView extends StatelessWidget {
                     height: _cardHeight,
                     bottom: 0,
                     width: 200,
-                    child: const Card(
+                    child:  Card(
                       color: Colors.white,
                       shape: RoundedRectangleBorder(),
                     ))

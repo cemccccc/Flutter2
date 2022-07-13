@@ -46,7 +46,7 @@ class NoteDemos extends StatelessWidget {
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                   primary: Colors.blue.shade200,
-                  shape: const RoundedRectangleBorder(
+                  shape:  RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10)))),
               child: Text(
                 elevatedButtonText.elevatedText,

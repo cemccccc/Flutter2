@@ -40,7 +40,7 @@ class ButtonLearn extends StatelessWidget {
               onPressed: () {},
               style: OutlinedButton.styleFrom(
                 backgroundColor: Colors.red,
-                shape: const CircleBorder(),
+                shape:  CircleBorder(),
               ),
               child: const Text('Outlined'),
             ),
@@ -58,7 +58,7 @@ class ButtonLearn extends StatelessWidget {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 primary: Colors.black,
-                shape: const RoundedRectangleBorder(
+                shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(
                     Radius.circular(20),
                   ),
