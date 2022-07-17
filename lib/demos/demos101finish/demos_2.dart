@@ -94,7 +94,7 @@ class _Demos2State extends State<Demos2> {
 
   AppBar customAppBar() {
     return AppBar(
-      centerTitle: false,
+      
       leading: const CircleAvatar(
           radius: 50, backgroundImage: AssetImage('assets/cem.jpg')),
       title: Row(
@@ -107,7 +107,7 @@ class _Demos2State extends State<Demos2> {
                 ?.copyWith(fontWeight: FontWeight.normal),
           ),
           const Text(' ${_ProjectConstats.appBarText2}',
-              style: TextStyle(fontSize: 26)),
+              style: TextStyle(fontSize: 26, color: Colors.black)),
           const Spacer(),
           IconButton(
             onPressed: () {},

@@ -3,8 +3,6 @@ class PostModel1 {
   int? id;
   String? title;
   String? body;
-
-  PostModel1(this.userId, this.id, this.title, this.body);
 }
 
 class PostModel2 {
@@ -24,7 +22,7 @@ class PostModel3 {
 
   PostModel3(this.userId, this.id, this.title, this.body);
 }
-
+//localde yapıyorsan bunu kullan
 class PostModel4 {
   final int userId;
   final int id;
@@ -43,6 +41,7 @@ class PostModel5 {
   final int _id;
   final String _title;
   final String _body;
+  int get userId => _userId; //encapsulate
 
   PostModel5(
       {required int userId,
@@ -85,5 +84,32 @@ class PostModel7 {
     _id = id;
     _title = title;
     _body = body;
+  }
+}
+
+//servisten data çekiyorsan en mantıklısı bu
+
+class PostModel8 {
+   final int? userId;
+   final int? id;
+   final String? title;
+   final String? body;
+
+  PostModel8({this.userId, this.id, this.title, this.body});
+
+
+
+  PostModel8 copyWith({
+    int? userId,
+    int? id,
+    String? title,
+    String? body,
+  }) {
+    return PostModel8(
+      userId: userId ?? this.userId,
+      id: id ?? this.id,
+      title: title ?? this.title,
+      body: body ?? this.body,
+    );
   }
 }
