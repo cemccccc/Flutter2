@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_baslasin/202/model_learn.dart';
 
 class ModelLearnView extends StatefulWidget {
-  ModelLearnView({Key? key}) : super(key: key);
+  const  ModelLearnView({Key? key}) : super(key: key);
 
   @override
   State<ModelLearnView> createState() => _ModelLearnViewState();
@@ -58,3 +58,5 @@ class _ModelLearnViewState extends State<ModelLearnView> {
     );
   }
 }
+
+

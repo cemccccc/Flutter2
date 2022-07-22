@@ -12,6 +12,11 @@ import '101/stateful_learn.dart';
 import '101/statefull_lifecycle.dart';
 import '101/text_field_learn.dart';
 import '202/model_learn_view.dart';
+import '202/service/denemetest/my_service3.dart';
+import '202/service/denemetest/myservice.dart';
+import '202/service/package_learn_view.dart';
+import '202/service/service_learn_view.dart';
+import '202/service/service_post_learn_view.dart';
 import '202/tab_learn.dart';
 import 'cem_demos/navigation_cem.dart';
 import 'demos/color_demos_view.dart';
@@ -31,7 +36,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light().copyWith(
+      theme: ThemeData.dark().copyWith(
         bottomAppBarTheme:
             const BottomAppBarTheme(shape: CircularNotchedRectangle()),
         tabBarTheme: const TabBarTheme(
@@ -51,15 +56,15 @@ class MyApp extends StatelessWidget {
         ),
         appBarTheme: const AppBarTheme(
             centerTitle: true,
-            iconTheme: IconThemeData(color: Colors.black),
-            titleTextStyle: TextStyle(color: Colors.black, fontSize: 20),
+            iconTheme: IconThemeData(color: Colors.white),
+            titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
             //centerTitle: true,
             systemOverlayStyle: SystemUiOverlayStyle.light,
             backgroundColor: Colors.transparent,
             elevation: 0),
       ),
       title: 'Güzel Başlık',
-      home: Demos3(),
+      home: PackageLearnView(),
     );
   }
 }
