@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_baslasin/202/theme/light_theme.dart';
 
 import '101/column_row_learn.dart';
 import '101/list_tile_learn.dart';
@@ -12,12 +13,14 @@ import '101/stateful_learn.dart';
 import '101/statefull_lifecycle.dart';
 import '101/text_field_learn.dart';
 import '202/model_learn_view.dart';
+import '202/package/loading_bar.dart';
 import '202/service/denemetest/my_service3.dart';
 import '202/service/denemetest/myservice.dart';
 import '202/service/package_learn_view.dart';
 import '202/service/service_learn_view.dart';
 import '202/service/service_post_learn_view.dart';
 import '202/tab_learn.dart';
+import '202/theme_learn_view.dart';
 import 'cem_demos/navigation_cem.dart';
 import 'demos/color_demos_view.dart';
 import 'demos/color_life_cycle.dart';
@@ -36,35 +39,38 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        bottomAppBarTheme:
-            const BottomAppBarTheme(shape: CircularNotchedRectangle()),
-        tabBarTheme: const TabBarTheme(
-            labelColor: Colors.black,
-            unselectedLabelColor: Colors.grey,
-            indicatorSize: TabBarIndicatorSize.tab),
-        indicatorColor: Colors.white,
-        iconTheme: const IconThemeData(color: Colors.black),
-        progressIndicatorTheme: const ProgressIndicatorThemeData(
-          //indicatorun rengini buradan okuyalım
-          color: Colors.white,
-          circularTrackColor: Colors.grey,
-        ),
-        cardTheme: CardTheme(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-        ),
-        appBarTheme: const AppBarTheme(
-            centerTitle: true,
-            iconTheme: IconThemeData(color: Colors.white),
-            titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
-            //centerTitle: true,
-            systemOverlayStyle: SystemUiOverlayStyle.light,
-            backgroundColor: Colors.transparent,
-            elevation: 0),
-      ),
+      theme: LightTheme().theme,
+
+      // ThemeData.dark().copyWith(
+      //   bottomAppBarTheme:
+      //       const BottomAppBarTheme(shape: CircularNotchedRectangle()),
+      //   tabBarTheme: const TabBarTheme(
+      //       labelColor: Colors.black,
+      //       unselectedLabelColor: Colors.grey,
+      //       indicatorSize: TabBarIndicatorSize.tab),
+      //   indicatorColor: Colors.white,
+      //   iconTheme: const IconThemeData(color: Colors.black),
+      //   progressIndicatorTheme: const ProgressIndicatorThemeData(
+      //     //indicatorun rengini buradan okuyalım
+      //     color: Colors.white,
+      //     circularTrackColor: Colors.grey,
+      //   ),
+      //   cardTheme: CardTheme(
+      //     shape:
+      //         RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      //   ),
+      //   appBarTheme: const AppBarTheme(
+      //       centerTitle: true,
+      //       iconTheme: IconThemeData(color: Colors.white),
+      //       titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
+      //       //centerTitle: true,
+      //       systemOverlayStyle: SystemUiOverlayStyle.light,
+      //       backgroundColor: Colors.transparent,
+      //       elevation: 0),
+      // ),
+
       title: 'Güzel Başlık',
-      home: PackageLearnView(),
+      home: ThemeLearnView(),
     );
   }
 }
