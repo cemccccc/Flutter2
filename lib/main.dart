@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_baslasin/202/animated_learn_view.dart';
 import 'package:flutter_baslasin/202/theme/light_theme.dart';
 
 import '101/column_row_learn.dart';
@@ -12,6 +13,8 @@ import '101/stack_learn.dart';
 import '101/stateful_learn.dart';
 import '101/statefull_lifecycle.dart';
 import '101/text_field_learn.dart';
+import '202/image_learn_202.dart';
+import '202/image_learn_202_2.dart';
 import '202/model_learn_view.dart';
 import '202/package/loading_bar.dart';
 import '202/service/denemetest/my_service3.dart';
@@ -70,7 +73,7 @@ class MyApp extends StatelessWidget {
       // ),
 
       title: 'Güzel Başlık',
-      home: ThemeLearnView(),
+      home: AnimatedLearnView(),
     );
   }
 }

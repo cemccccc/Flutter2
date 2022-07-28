@@ -19,7 +19,7 @@ class LightTheme {
               ColorScheme.light(onPrimary: _LightColor()._buttonColor)),
       colorScheme: const ColorScheme.light(),
       floatingActionButtonTheme:
-          const FloatingActionButtonThemeData(backgroundColor: Colors.purple),
+          const FloatingActionButtonThemeData(backgroundColor: Colors.green),
       textTheme: ThemeData.light().textTheme.copyWith(
             subtitle1: TextStyle(fontSize: 25, color: _lightColor._textColor2),
           ),
