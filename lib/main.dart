@@ -13,6 +13,7 @@ import '101/stack_learn.dart';
 import '101/stateful_learn.dart';
 import '101/statefull_lifecycle.dart';
 import '101/text_field_learn.dart';
+import '202/form_learn_view.dart';
 import '202/image_learn_202.dart';
 import '202/image_learn_202_2.dart';
 import '202/model_learn_view.dart';
@@ -22,6 +23,7 @@ import '202/service/denemetest/myservice.dart';
 import '202/service/package_learn_view.dart';
 import '202/service/service_learn_view.dart';
 import '202/service/service_post_learn_view.dart';
+import '202/state_manage/state_manage_learn_view.dart';
 import '202/tab_learn.dart';
 import '202/theme_learn_view.dart';
 import 'cem_demos/navigation_cem.dart';
@@ -73,7 +75,7 @@ class MyApp extends StatelessWidget {
       // ),
 
       title: 'Güzel Başlık',
-      home: AnimatedLearnView(),
+      home: FormLearnView(),
     );
   }
 }
